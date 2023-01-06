@@ -1,4 +1,4 @@
-// input data
+// receive the data
 var finances = [
   ['Jan-2010', 867884],
   ['Feb-2010', 984655],
@@ -91,3 +91,34 @@ var finances = [
 // testing area
 
 console.log(finances[0][1]);
+
+
+//total amount of Profit and loss
+// total of months
+// average of PL changes
+// max incresase in profit
+// max decrease in loss
+// ------
+// Financial Analysis
+// ----------------------------
+// Total Months: 25
+// Total: $2561231
+// Average  Change: $-2315.12
+// Greatest Increase in Profits: Feb-2012 ($1926159)
+// Greatest Decrease in Profits: Sep-2013 ($-2196167)
+
+// define the vars
+let periodNumTotal = finances.length;
+let netProfitLoss = 0;
+let avgProfitLoss = 0;
+
+// Total months:
+console.log("Financial Analysis");
+console.log("----------------------------");
+console.log("Total Months:", periodNumTotal );
+for (var i = 0; i < periodNumTotal; i++) {
+// sum of all profit and loss
+  netProfitLoss = netProfitLoss + finances[i][1];
+};
+
+console.log("Total: £" + netProfitLoss.toLocaleString('en-gb'));
