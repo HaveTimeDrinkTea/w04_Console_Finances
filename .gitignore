@@ -1,6 +1,7 @@
 # remove unwanted directories and files
 **/.DS_Store
 **/.vscode
+**/challenge
 
 # Logs
 logs
